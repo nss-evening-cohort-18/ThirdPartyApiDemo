@@ -1,7 +1,6 @@
 # ThirdPartyApiDemo
 
-This demo used the Stars Wars API found at https://swapi.dev/
-Feel free to familiarize yourself with the endpoints and data structures returned.
+This demo used the Stars Wars API found at https://swapi.dev/ .  Feel free to familiarize yourself with the endpoints and data structures returned.  You can also click around throught the API directly in your browser by navigating to https://swapi.dev/api/ . 
 
 A brief explanation of what this app simulates:
 - the Users endpoint will return a view model for the front end to use as a profile page
