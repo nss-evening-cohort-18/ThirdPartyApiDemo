@@ -1,4 +1,5 @@
 using Microsoft.Net.Http.Headers;
+using ThirdPartyApiUsageDemo.Clients;
 using ThirdPartyApiUsageDemo.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,7 +9,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddTransient<ISwapiRepository, SwapiRepository>();
+builder.Services.AddTransient<ISwapiClientRepository, SwapiClientRepository>();
+builder.Services.AddTransient<IUserSqlRepository, UserSqlRepository>();
 builder.Services.AddHttpClient("Swapi", httpClient =>
 {
     httpClient.BaseAddress = new Uri("https://swapi.dev/api/");
